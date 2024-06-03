@@ -1,0 +1,15 @@
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.footer a:hover {
+	cursor: pointer;
+	color: rgb(155, 149, 149);
+}
