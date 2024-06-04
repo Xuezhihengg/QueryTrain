@@ -1,0 +1,6 @@
+scrapy
+scrapy_playwright
+fake_useragent
+fastapi
+asyncio
+urllib
