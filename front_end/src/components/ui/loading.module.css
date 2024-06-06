@@ -7,6 +7,7 @@
 	align-items: center;
 	border-radius: 50%;
 	margin-left: -75px;
+	align-self: center;
 }
 
 .spinner span {

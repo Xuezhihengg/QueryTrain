@@ -1,7 +1,6 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 .inputs {
@@ -76,10 +75,11 @@
 	position: relative;
 	transition: all 0.5s;
 	z-index: 1;
+	align-self: center;
 }
 
-.button_ban{
-  display: none;
+.button_ban {
+	display: none;
 }
 .button::before {
 	content: '';
@@ -150,4 +150,20 @@
 
 .toggle-state:checked ~ .indicator {
 	transform: translate3d(25%, 0, 0);
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.info_card {
+	font-size: 1.8rem;
+	margin-top: 0;
+}
+
+.date_info{
+	font-size: 1.2rem;
+	margin-top: 0;
 }

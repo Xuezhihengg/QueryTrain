@@ -7,7 +7,7 @@ import Loader from '../ui/loading';
 
 export default function QueryForm() {
 	const [isLoading, setIsLodading] = useState(false);
-	const [formState, formAction] = useFormState(query, { finish: 0 });
+	const [formState, formAction] = useFormState(query, { finish: 0, data: null });
 
 	const sumbitHandler = () => {
 		setIsLodading(true);
@@ -52,6 +52,13 @@ export default function QueryForm() {
 			</button>
 			{isLoading && <Loader />}
 			<p>-------------------------------------------------------------------------------</p>
+			{formState.data && (
+				<div className={classes.info}>
+					<p className={classes.info_card}>{formState.data.start_s}</p>
+					<p className={classes.date_info}>{formState.data.date}</p>
+					<p className={classes.info_card}>{formState.data.end_s}</p>
+				</div>
+			)}
 		</form>
 	);
 }
