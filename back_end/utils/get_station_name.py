@@ -1,8 +1,7 @@
 import re
 import json
 import requests
-import pandas as pd
-from pprint import pprint
+
 #JS，这个用浏览器打开会呈现一堆看不懂的文字，需要用正则表达式对其解析
 url = 'https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9028'
 #对网页发送get请求

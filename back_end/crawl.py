@@ -34,9 +34,7 @@ async def get_trains_direct(start_s,end_s,train_date):
         "-a",
         f"start_url={start_url}",
     ]
-
     await execute(command)
-
 
     json_data = read_json_file("trains_direct.json")
     return json_data
